@@ -33,7 +33,6 @@
         improving focus, time management, and healthy balance, aiming for long-term career and financial stability.
       </p>
     </section>
-
     <section class="card" id="skills">
       <h2>Skills</h2>
       <ul class="list">
@@ -46,7 +45,6 @@
         <li><strong>Execution (In progress):</strong> weekly schedule, time management, consistency</li>
       </ul>
     </section>
-
     <section class="card" id="projects" >
       <h2>Projects</h2>
     <div class="project-grid">
@@ -63,7 +61,6 @@
         </ul>
             <button type="button" class="View" data-url="https://github.com/ali-s-jarad">View Project</button>
       </div>
-
       <div class="project">
         <h3>Multi-Page Website (Phase 1)</h3>
         <p class="meta">HTML • CSS</p>
@@ -103,28 +100,21 @@
       </div>
     </div>
     </section>
-
     <section class="card" id="contact" >
       <h2>Contact</h2>
       <p>Email: <a href="mailto:ali.s.jarad103@gmail.com">ali.s.jarad103@gmail.com</a>
         <button type="button" class="View" onclick="copyEmail()">Copy</button></p>
-
       <p>LinkedIn: <a href="https://www.linkedin.com/in/ali-jarad-103/" target="_blank" rel="noopener">Ali Jarad</a></p>
       <p>GitHub: <a href="https://github.com/ali-jarad" target="_blank" rel="noopener">ali-jarad</a></p>
     </section>
   </main>
-
   <footer class="site-footer">
     <p>© <span id="year"></span> Ali Jarad</p>
   </footer>
-
-
-  
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
     <script src="script.js"></script>
 </body>
 </html>
-------------------------------------------------------------------------------------------------------------
 * {
   box-sizing: border-box;
 }
@@ -136,14 +126,12 @@ body {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   line-height: 1.6;
 }
-
 .site-header {
   max-width: 900px;
   margin: 24px auto 0;
   padding: 0 16px;
   text-align: center;
 }
-
 .site-header h1 {
   margin: 0;
 }
@@ -281,7 +269,7 @@ button.View.small {
 .toast.show {
   opacity: 1;
 }
-----------------------------------------------------------------------------------------
+
 document.addEventListener("DOMContentLoaded", () => {
   // Footer year (لو موجود)
   const yearEl = document.getElementById("year");
@@ -314,7 +302,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const copyBtn = document.getElementById("copyEmailBtn");
   copyBtn?.addEventListener("click", async () => {
     const email = "ali.s.jarad103@gmail.com";
-
     // 1) Modern API (يعمل على HTTPS/localhost)
     if (navigator.clipboard && window.isSecureContext) {
       try {
@@ -323,7 +310,6 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       } catch {}
     }
-
     // 2) Fallback (يعمل غالبًا حتى على file://)
     try {
       const ta = document.createElement("textarea");

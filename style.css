@@ -150,7 +150,6 @@ button.View.small {
   transition: opacity 200ms ease;
   max-width: 90vw;
 }
-
 .toast.show {
   opacity: 1;
 }

@@ -5,23 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ali Jarad | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  
-
 </head>
-<script src="script.js"></script>
-</body>
 
 <body>
   <header class="site-header">
     <h1>Ali Jarad</h1>
     <p class="subtitle">Computer Science Student | Web Developer (Entry-Level)</p>
-    <nav class="top-nav" aria-label="Primary">
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
-</nav>
 
+    <nav class="top-nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <main class="container">
@@ -47,67 +43,74 @@
       </ul>
     </section>
 
-    <section class="card" id="projects" >
+    <section class="card" id="projects">
       <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project">
-        <h3>Habit Tracker (Console)</h3>
-        <p class="meta">Python • File Saving (Text)</p>
-        <p>
-          A simple habit-tracking app to log daily habits and maintain consistency. Includes basic file saving to store progress.
-        </p>
-        <ul class="list">
-          <li>Add habits and mark daily completion</li>
-          <li>View a simple progress summary</li>
-          <li>Save/load progress (basic)</li>
-        </ul>
-            <button type="button" class="View" data-url="https://github.com/ali-s-jarad">View Project</button>
-      </div>
 
-      <div class="project">
-        <h3>Multi-Page Website (Phase 1)</h3>
-        <p class="meta">HTML • CSS</p>
-        <p>
-          A multi-page website prototype with structured navigation and consistent layout across sections.
-        </p>
-        <ul class="list">
-          <li>Multi-page structure with a navigation menu</li>
-          <li>Consistent styling foundation</li>
-          <li>Responsive-ready layout approach</li>
-        </ul>
-        <button type="button" class="View" data-url="https://github.com/ali-s-jarad">View Project</button>
+      <div class="project-grid">
+        <div class="project">
+          <h3>Habit Tracker (Console)</h3>
+          <p class="meta">Python • File Saving (Text)</p>
+          <p>
+            A simple habit-tracking app to log daily habits and maintain consistency. Includes basic file saving to store progress.
+          </p>
+          <ul class="list">
+            <li>Add habits and mark daily completion</li>
+            <li>View a simple progress summary</li>
+            <li>Save/load progress (basic)</li>
+          </ul>
+          <button type="button" class="View" data-url="https://github.com/ali-jarad">View Project</button>
+        </div>
+
+        <div class="project">
+          <h3>Multi-Page Website (Phase 1)</h3>
+          <p class="meta">HTML • CSS</p>
+          <p>
+            A multi-page website prototype with structured navigation and consistent layout across sections.
+          </p>
+          <ul class="list">
+            <li>Multi-page structure with a navigation menu</li>
+            <li>Consistent styling foundation</li>
+            <li>Responsive-ready layout approach</li>
+          </ul>
+          <button type="button" class="View" data-url="https://github.com/ali-jarad">View Project</button>
+        </div>
+
+        <div class="project">
+          <h3>Mini To-Do</h3>
+          <p class="meta">JavaScript • DOM Manipulation</p>
+          <p>
+            A simple mini to-do app to practice DOM manipulation and basic interactivity.
+          </p>
+          <ul class="list">
+            <li>Add and remove tasks</li>
+            <li>Mark tasks as completed</li>
+            <li>Practice clean UI structure</li>
+          </ul>
+          <button type="button" class="View" data-url="https://github.com/ali-jarad/mini-to-do">View Project</button>
+        </div>
+
+        <div class="project">
+          <h3>Weekly Schedule Page</h3>
+          <p class="meta">HTML • CSS</p>
+          <p>
+            A multi-section web page that displays your weekly routine (study, coding, meals, workout) in a clear layout.
+          </p>
+          <ul class="list">
+            <li>Multi-section layout for different daily activities</li>
+            <li>Consistent navigation and formatting</li>
+            <li>Responsive-ready layout approach</li>
+          </ul>
+          <button type="button" class="View" data-url="https://github.com/ali-jarad">View Project</button>
+        </div>
       </div>
-      <div class="project"> 
-        <h3>Mini To-Do</h3>
-        <p class="meta">JavaScript • DOM Manipulation</p>
-        <p> A simple multi-section web page that displays your weekly routine (study, coding, meals, workout) in a clear layout. Designed to practice structure, styling, and consistent navigation/formatting.</p>
-        <ul class="list">
-          <li>Multi-section layout for different daily activities</li>
-          <li>Consistent navigation and formatting</li>
-          <li>Basic interactivity with JavaScript</li>
-        </ul>
-        <button type="button" class="View" data-url="https://github.com/ali-s-jarad">View Project</button>
-      </div>
-      <div class="project">
-        <h3>Weekly Schedule Page</h3>
-        <p class="meta">HTML • CSS</p>
-        <p>
-          A simple multi-section web page that displays your weekly routine (study, coding, meals, workout) in a clear layout. Designed to practice structure, styling, and consistent navigation/formatting.
-        </p>
-        <ul class="list">
-          <li>Multi-section layout for different daily activities</li>
-          <li>Consistent navigation and formatting</li>
-          <li>Basic interactivity with JavaScript</li>
-        </ul>
-        <button type="button" class="View" data-url="https://github.com/ali-s-jarad">View Project</button>
-      </div>
-    </div>
     </section>
 
-    <section class="card" id="contact" >
+    <section class="card" id="contact">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:ali.s.jarad103@gmail.com">ali.s.jarad103@gmail.com</a>
-        <button type="button" class="View" onclick="copyEmail()">Copy</button></p>
+      <p>
+        Email: <a href="mailto:ali.s.jarad103@gmail.com">ali.s.jarad103@gmail.com</a>
+        <button type="button" class="View small" id="copyEmailBtn">Copy</button>
+      </p>
 
       <p>LinkedIn: <a href="https://www.linkedin.com/in/ali-jarad-103/" target="_blank" rel="noopener">Ali Jarad</a></p>
       <p>GitHub: <a href="https://github.com/ali-jarad" target="_blank" rel="noopener">ali-jarad</a></p>
@@ -118,9 +121,7 @@
     <p>© <span id="year"></span> Ali Jarad</p>
   </footer>
 
-
-  
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
